@@ -27,7 +27,7 @@ Citizen.CreateThread(function()
             local vehpos = GetEntityCoords(vehicle)
             local dimension = GetModelDimensions(GetEntityModel(vehicle), First, Second)
             
-            if #(pos - vehpos < 3.0 and not IsPedInAnyVehicle(ped) then
+            if #(pos - vehpos) < 3.0 and not IsPedInAnyVehicle(ped) then
                 Vehicle.Coords = vehpos
                 Vehicle.Dimensions = dimension
                 Vehicle.Vehicle = vehicle
