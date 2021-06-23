@@ -66,6 +66,9 @@ Citizen.CreateThread(function()
                 end
 
                 RequestAnimDict('missfinale_c2ig_11')
+                while not HasAnimDictLoaded('missfinale_c2ig_11') do
+                    Wait(1)
+                end
                 TaskPlayAnim(ped, 'missfinale_c2ig_11', 'pushcar_offcliff_m', 2.0, -8.0, -1, 35, 0, 0, 0, 0)
                 Citizen.Wait(200)
 
