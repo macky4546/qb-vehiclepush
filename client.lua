@@ -1,12 +1,3 @@
-QBCore = nil
-
-Citizen.CreateThread(function()
-  while QBCore == nil do
-    TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-    Citizen.Wait(0)
-  end
-end)
-
 Config = {} 
 Config.DamageNeeded = 100.0 -- 100.0 being broken and 1000.0 being fixed a lower value than 100.0 will break it
 Config.MaxWidth = 5.0 -- Will complete soon
